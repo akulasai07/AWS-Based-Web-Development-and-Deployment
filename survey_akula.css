@@ -1,0 +1,71 @@
+body {
+
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+
+      padding-top: 90px;
+
+      font-family: "Lato", sans-serif;
+  }
+
+  .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 400px; /* Adjust the width as needed */
+      margin: auto;
+      margin-top: 20px;
+  }
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.h1{font-size:"bold";}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.w3-bar-item.w3-button.w3-padding-large:hover {
+       background-color: #FFCC33 !important;
+   }
+.w3-bar-item.w3-button.w3-hide-small.w3-padding-large:hover, .w3-center.w3-padding-large.w3-xlarge.w3-wide.w3-animate-opacity{
+       background-color: #FFCC33 !important;
+   }  .w3-bar, .w3-center.w3-padding-large.w3-xlarge.w3-wide.w3-animate-opacity:hover, .w3-container.w3-cente{
+    background-color: #006633 !important;
+  }
+        label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="date"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+      margin-right: 5px;
+  }
+  .required::before {
+      content: "* ";
+      color: red;
+  }
+  input[type="submit"] {
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Change the button color on hover */
+input[type="submit"]:hover {
+  background-color: #0056b3; /* New background color on hover */
+}
