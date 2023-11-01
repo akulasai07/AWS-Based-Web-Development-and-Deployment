@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CS Department</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+ /* Styling for navbar and menu items */
+.w3-bar-item.w3-button.w3-padding-large:hover {
+       background-color: #FFCC33 !important;
+   }
+.w3-bar-item.w3-button.w3-hide-small.w3-padding-large:hover, .w3-center.w3-padding-large.w3-xlarge.w3-wide.w3-animate-opacity{
+       background-color: #FFCC33 !important;
+   }  .w3-bar, .w3-center.w3-padding-large.w3-xlarge.w3-wide.w3-animate-opacity:hover, .w3-container.w3-cente{
+    background-color: #006633 !important;
+  }
+   .green-color{
+     color: #006633;
+   }
+  .w3-hide-small {
+        font-weight: bold;
+    }
+  .bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bgimg-1 {
+    background-image: url('https://media.bizj.us/view/img/12018832/wbj-10*1200xx6720-3780-0-350.jpg');
+    min-height: 100%;
+  }
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+    .Degree .dheader ul {
+
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30px, 0.5fr));
+      grid-gap: 15px;
+      list-style: none;
+      padding:0;
+      margin: 0;
+    }
+    #button {
+        width: 6em;
+        border: 2px solid green;
+        background: #ffe;
+        border-radius: 5px;
+    }
+    /* Styling for footer links */
+    footer a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #006633; /* Change the link color */
+    margin-right: 20px; /* Add some spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    color: #FFCC33;
+}
+
+</style>
+</head>
+<body>
+
+/* Navbar */
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href=".\myblog.html" class="w3-bar-item w3-button w3-padding-large ">Home</a>
+    <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-padding-large  w3-hover" >About Us</a>
+    <a href="#degree" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover">Degree</a>
+    <a href="#RCourse" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover">Required Courses</a>
+    <a href="#foot" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover">Survey</a>
+  </div>
+
+  <! --Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#About" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="#degree" class="w3-bar-item w3-button w3-padding-large">Degree</a>
+    <a href="#RCourse" class="w3-bar-item w3-button w3-padding-large">Required Courses</a>
+    <a href="#foot" class="w3-bar-item w3-button w3-padding-large">Survey</a>
+  </div>
+</div>
+
+/* Header */
+<br>
+<br><br>
+<div class="header" style="border: #006633; border-width: 5px; border-style: solid; box-shadow: 5px 10px 20px #FFCC33 inset; padding-left: 50px; padding-right: 50px;">
+  <img style=" padding-bottom: 20px; padding-top: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWT8z7MotyVsXgXLYC_Xg-JxrQ4QePgx5Dg&usqp=CAU">
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large  w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">GEORGE MASON UNIVERSITY</span></span>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="About">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>ABOUT US</h1>
+      <br><br>
+      <!-- Content about George Mason University -->
+      <h7 class="w3-padding-32">George Mason University (GMU) is a hub of innovation and excellence in Engineering and Computer Science. The university offers a diverse array of programs in these fields, catering to students with a passion for technology and problem-solving. GMU's School of Engineering provides specialized courses in areas such as computer engineering, electrical engineering, and mechanical engineering, equipping students with the skills needed to design and create cutting-edge technologies. In the realm of Computer Science, GMU offers programs in software engineering, data science, cybersecurity, and more, nurturing the next generation of computer scientists and software engineers. With a commitment to research and hands-on learning, GMU's Engineering and Computer Science programs prepare students for dynamic careers in the tech industry and contribute to advancements in the ever-evolving world of technology.</h7>
+<br>
+<br>
+<!-- More content about the department -->
+  <h7 class="w3-padding-32">
+The department offers two Bachelor of Science programs with a total enrollment of over 2200 students: the B.S. in Computer Science and the inter-disciplinary B.S. in Applied Computer Science; four M.S. programs in Computer Science, Information Systems, Information Security and Assurance, and Software Engineering with a total enrollment of almost 1000 students; and a Ph.D. program in Computer Science with nearly 200 students. The department's faculty also teach and participate in the inter-disciplinary M.S. in Data Analytics Engineering and the Ph.D. in Information Technology offered by the Volgenau School of Engineering.
+
+The department has a world-class faculty with research strengths in all areas of computing, and a strong commitment to teaching. Nearly half of our faculty were recruited in the past three years, and we now rank among the Top 40 Computer Science Departments in the US.</h7>
+
+
+    </div>
+
+    <div class="w3-third w3-center">
+  <div style="position: relative; height: 200%; padding-top: 190px; padding-left: 40px ">
+    <img src="https://giving.gmu.edu/wp-content/uploads/2019/03/GMU-Featured-Image.png" class="w3-image w3-round" style="width:100%; height:100%; object-fit: cover;">
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="degree">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-university green-color w3-padding-32
+        w3-margin-right" style="font-size:105px;"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h2 class="mt-4 gmu-green">Master's Degrees</h2>
+      <! --creating a list for available courses -->
+      <ul>
+        <li>Master of Science in Computer Science</li>
+        <li>Master of Science in Information Systems</li>
+        <li>Master of Science in Data Analytics Engineering</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div  id="RCourse">
+  <h2>Required Courses for Master of Science in Computer Science:</h2>
+    <br>
+  <div class="w3-twothird w3-grey  w3-center w3-opacity ">
+<! --creating table for courses with name and number for each stream -->
+  <table>
+    <thead>
+      <tr>
+        <th>Course Number</th>
+        <th>Course Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CS 583</td>
+        <td>Analysis of Algorithms</td>
+      </tr>
+      <tr>
+        <td>CS 580</td>
+        <td>Machine Learning</td>
+      </tr>
+      <tr>
+        <td>CS 584</td>
+        <td>Data Mining</td>
+      </tr>
+      <tr>
+        <td>CS 550</td>
+        <td>Database Systems</td>
+      </tr>
+      <tr>
+        <td>CS 530</td>
+        <td>Mathematical Foundations of CS</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <h2 class="w3-container">Required Courses for Master of Science in Information Systems:</h2>
+  <br>
+  <div class="w3-twothird w3-grey  w3-center w3-opacity">
+  <table>
+    <thead>
+      <tr>
+        <th>Course Number</th>
+        <th>Course Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>INFS 622</td>
+        <td>Information Systems Analysis and Design</td>
+      </tr>
+      <tr>
+        <td>INFS 580</td>
+        <td>Analytics: Big Data to Information</td>
+      </tr>
+      <tr>
+        <td>INFS 611</td>
+        <td>Rapid Information Systems Prototyping</td>
+      </tr>
+      <tr>
+        <td>COMP 502</td>
+        <td>Mathematical Foundations of Computing I</td>
+      </tr>
+      <tr>
+        <td>AIT 670</td>
+        <td>Cloud Computing Security</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <h2  class="w3-container">Required Courses for Master of Science in Data Analytics Engineering:</h2>
+    <br>
+    <div class="w3-twothird w3-grey  w3-center w3-opacity">
+  <table>
+    <thead>
+      <tr>
+        <th>Course Number</th>
+        <th>Course Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AIT 580</td>
+        <td>Analytics: Big Data to Information</td>
+      </tr>
+      <tr>
+        <td>CS 504</td>
+        <td>Principles of Data Management and Mining 1</td>
+      </tr>
+      <tr>
+        <td>DAEN 690</td>
+        <td>Data Analytics Project</td>
+      </tr>
+      <tr>
+        <td>OR 531</td>
+        <td>Analytics and Decision Analysis</td>
+      </tr>
+      <tr>
+        <td>STAT 515</td>
+        <td>Applied Statistics and Visualization for Analytics</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<!--creating a hyperlink for survey form -->
+<!-- Footer -->
+
+<footer id="foot" class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+  <p>
+
+  We love your feedback : <a href=".\survey_akula.html">Survey Form</a></p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+
+</html>

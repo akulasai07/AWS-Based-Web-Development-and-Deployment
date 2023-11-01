@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://wallpapercave.com/wp/wp8746134.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://www.smdwebtech.com/wp-content/uploads/2019/03/Contact-Us-Background.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SAI <span class="w3-hide-small">DHARSHINI</span> AKULA</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Sai Dharshini Akula </b></p><br>
+      <img src=".\Profile.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. Hello, I'm Sai Dharshini Akula, a passionate software engineer with a strong foundation in SAP development and a thirst for innovation. With a year of experience as an Assistant System Engineer at Tata Consultancy Services, I've honed my skills in designing solutions that optimize servers and systems, ensuring seamless operations for companies like Honeywell. Currently pursuing my Masters in Computer Science at George Mason University, I am eager to embark on new challenges that will enable me to further apply my knowledge and skills in the dynamic field of Computer Science. My journey so far has been filled with diverse experiences, from front-end development to full-stack internships, and even creating innovative applications like object detection for the visually impaired. I am driven by a curiosity to explore new technologies, and I'm excited to see where my next adventure in the world of software development will take me. Feel free to connect with me on LinkedIn or drop me an email; I'm always up for a conversation about all things tech! </p>
+    </div>
+
+    </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide">JAVA</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide">PYTHON</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide">C</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide">DBMS</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">85%</div>
+  </div>
+  <p class="w3-wide">HTML</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide">CSS</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2</span><br>
+    Internships
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2+</span><br>
+    Job Experience
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4+</span><br>
+    Certificaions
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Projects
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WORK</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+
+
+
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div class="w3-container">
+      <h3 class="w3-center">WORK EXPERIENCE</h3>
+
+      <h5>
+        Tata Consultancy Services,
+        <span class="w3-opacity">Assistant System Engineer-Trainee</span>
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          Delivered SAP training, user support, and knowledge transfer at the end of the project and followed up to verify
+    successful implementation.
+        </li>
+        <li>
+          Solved functional and technical obstacles and worked closely with project teams from different streams.
+        </li>
+        <li>
+Designed, developed, modified, and debugged programs.
+        </li>
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+
+      <h5> Cantilever Labs, <span class="w3-opacity">Front-End Developer</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+An application to decide whether the student gets admitted into the college.
+        </li>
+        <li>
+An application to decide whether the student gets admitted into the college.
+        </li>
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+      <h5>
+        Ogive Technologies,
+        <span class="w3-opacity">Full Stack Developer Intern</span>
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          An application that generates quotations and invoices for the product or service.
+        </li>
+        <li>
+           In this project, OrderId is taken as input and produces the details about the product or service.
+        </li>
+
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div class="w3-container">
+      <h3 class="w3-center">ACADEMIC PROJECTS</h3>
+
+      <h5>
+        Aspect-based Sentimental Analysis
+
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          A classification model classifies the sentiment expressed towards certain product or service aspects.
+        </li>
+        <li>
+          The model is trained using an XML dataset.
+        </li>
+        <li>
+Reviews should be entered into the Gui of the application then the sentiment of the aspect is classified.
+        </li>
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+
+      <h5> Sentimental Analysis for Yelp Review Classification
+</h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+A classification model classifies the sentiments of the product or service.
+        </li>
+        <li>
+A Yelp dataset is taken to train the model.
+        </li>
+        <li>
+          Reviews should be entered into the Gui of the application then the sentiment of the review is classified.
+        </li>
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+      <h5>
+        Efficient House Rent Prediction Using Machine Learning
+
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          House rents are predicted using regression methods.
+
+        </li>
+        <li>
+           Different factors correspond to the pricing of houses.
+
+        </li>
+        <li>
+          A Gui is created where details should be entered, and the cheapest price is predicted according to the requirements.
+        </li>
+
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+      <h5>
+        Object Information Retrieval in Real-time
+
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          Developed an Android application for detecting objects for the blind.
+
+        </li>
+        <li>
+          This is implemented for the COCO dataset, which has 80 classes of objects that the user will probably encounter daily.
+Android Studio is used to make the app and the UI.
+
+        </li>
+        <li>
+          The model is trained using TensorFlow and converted into TensorFlow Lite. The project is carried out using a camera
+device on the client's side that records live video, converts it into frames, detects the objects and their position using the
+ssd_mobilenet_v2_quantized model, and gives audio output.
+        </li>
+
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+      <h5>
+        Learn To Adapt
+
+      </h5>
+    </div>
+
+    <div class="w3-container">
+      <ul>
+        <li>
+          Reproduced the results of the ACL 2022 paper "Learn to adapt for generalized zero-shot text classification.
+
+        </li>
+        <li>
+          The paper proposes a Learn to Adapt network to classify textual instances from previously seen and incrementally
+emerging unseen classes.
+
+        </li>
+        <li>
+          The reproducibility further presents extensive experiments on the robustness and multilinguality of the model.
+        </li>
+        <li>
+          It’s concluded that the model is sensitive to variations in the dataset, and multilingual data reduces the model's
+accuracy.
+        </li>
+
+      </ul>
+      <div class="w3-row">
+        <!-- <div class="w3-col m8 s12">
+  <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+</div> -->
+        <!-- <div class="w3-col m4 w3-hide-small">
+  <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+</div> -->
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I STUDY</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://storage.googleapis.com/collegetuitioncompare/images/colleges/232186-george-mason-university.jpg " class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> George Mason University, Fairfax, VA, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (240)-440-0098<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: akulasaidharshini@mail.com<br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> LinkedIn: www.linkedin.com/in/akulasaidharshini<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="./dept_CS_akula.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>CS Department Page</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
