@@ -1,9 +1,9 @@
-# SWE642
+# AWS-Based Web Development and Deployment
 
-This project is an extension of a previous assignment, aimed at enhancing a web page using various web technologies, including JavaScript, Bootstrap, cookies, and Ajax implementation. Below are the specific details and instructions for the assignment.
+This project aimed at enhancing a web page using various web technologies, including JavaScript, Bootstrap, cookies, and Ajax implementation. 
 
 ## Assignment Overview
-The objective of this assignment is to improve a web page and provide an enriched user experience by implementing the following features and functionalities:
+The objective of this project is to improve a web page and provide an enriched user experience by implementing the following features and functionalities:
 
 ### Navigation Bar Enhancement:
 - Redesigned the webpage to incorporate a Bootstrap navigation bar with a medium to dark background.
