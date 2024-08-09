@@ -2,7 +2,7 @@
 
 This project aimed at enhancing a web page using various web technologies, including JavaScript, Bootstrap, cookies, and Ajax implementation. 
 
-## Assignment Overview
+## Overview
 The objective of this project is to improve a web page and provide an enriched user experience by implementing the following features and functionalities:
 
 ### Navigation Bar Enhancement:
